@@ -1,0 +1,10 @@
+页面布局组件
+AspectRatio 子控件的宽高比设置
+Card 
+CircleAvatar
+
+注意！
+ListView嵌套中需要使用 shrinkWrap 属性，高度根据子组件撑起
+
+设置圆形头像的两种方式 
+CircleAvatar 和 ClipOval

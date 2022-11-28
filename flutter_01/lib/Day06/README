@@ -1,0 +1,5 @@
+Flutter页面布局padding、Row、Colummn、Flex、Expanded组件学习
+
+1、double.infinity 表示跟父视图的宽高等大
+
+2、Flex 弹性组件 结合Expanded组件使用

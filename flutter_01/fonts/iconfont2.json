@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "26313799",
+      "name": "旅游旅行",
+      "font_class": "lvyoulvhang",
+      "unicode": "ffc9",
+      "unicode_decimal": 65481
+    },
+    {
+      "icon_id": "26313802",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "ffca",
+      "unicode_decimal": 65482
+    },
+    {
+      "icon_id": "145491",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    }
+  ]
+}

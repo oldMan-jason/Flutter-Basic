@@ -1,0 +1,25 @@
+路由详解
+
+1、 基本路由实现页面跳转
+    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return DetailPage();
+                    }));
+2、 路由跳转传值，通过自定义构造函数实现
+    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return DetailPushPage("我是参数ID= 1002");
+                    }));
+
+3、Flutter中的命名路由，统一进行管理
+    Navigator.pushNamed(context, "/detail");
+
+4、命名路由配置步骤
+  1、配置routes，单独抽离出来！
+  2、通过onGenerateRoute来配置路由
+  3、注意不需要在MaterialApp组件中配置routes参数值，否则传参出现问题！
+
+5、替换路由
+
+6、返回跟路由
+

@@ -1,0 +1,10 @@
+1、 设置button的圆角
+shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20)))),
+
+2、圆形button
+              style: ButtonStyle(
+                  shape: MaterialStateProperty.all(
+                      CircleBorder(side: BorderSide(color: Colors.white)))),
+
+3、 按钮的宽高自定义需要嵌套Container组件

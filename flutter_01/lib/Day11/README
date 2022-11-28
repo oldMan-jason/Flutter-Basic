@@ -1,0 +1,10 @@
+1、区别
+StatelessWidget是无状态组件，状态是不可更改的
+StatefulWidget有状态组件，持有的状态可能在widget的生命周期改变。
+
+2、使用StatefulWidget
+在修改值时 需要调用 setState(() {});
+
+3、floatingActionButton在 Scaffold中，建议将Scaffold放在子组件中才可以使用
+floatingActionButton: FloatingActionButton(onPressed: () {}),
+

@@ -1,0 +1,7 @@
+##第二天学习 -- Container 和 Text 组件
+
+1、Container
+    单容器类控件，即只包含一个子控件。Container可以装饰和定位子控件
+2、Text
+    文本显示控件
+

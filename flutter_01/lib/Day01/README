@@ -1,0 +1,25 @@
+##第一天学习
+1、主要学习flutter项目结构
+lib
+    flutter相关的代码，我们编写的代码就在这个文件夹下
+test
+    存放测试代码
+pubspec.yaml
+    配置文件，一般添加第三方依赖
+analysis_options.yaml
+    分析dart语法文件，老项目升级为新项目如果存在警告信息可删除
+
+2、自定义组件
+    组件都是类，继承至StatelessWidget无状态组件，或者StatefulWidget有状态组件
+
+3、MaterialApp
+    它封装了应用程序实现Material Design所需要的一些widget，一般作为顶层widget使用；
+    常用属性：
+        home(主页) 、title(标题)、color(颜色)、theme(主题)、routes(路由)...
+
+4、Scaffold
+    是Material Design布局结构的基本实现，提供显示drawer、snackbar和底部sheet的API
+    常用属性：  
+        appBar、body、drawer(抽屉)
+
+

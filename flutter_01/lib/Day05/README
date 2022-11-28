@@ -1,0 +1,11 @@
+GridView
+两种构建方式
+1、 GridView.count()
+    需要设置一行最多一个
+2、GridView.extent()
+    需要设置一行最长子元素长度
+
+GridView.builder()
+两种delegate构建方式
+1、SliverGridDelegateWithFixedCrossAxisCount
+2、SliverGridDelegateWithMaxCrossAxisExtent

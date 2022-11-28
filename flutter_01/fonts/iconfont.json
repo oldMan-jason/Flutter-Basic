@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1090",
+      "name": "图书",
+      "font_class": "tushu",
+      "unicode": "f00a1",
+      "unicode_decimal": 983201
+    },
+    {
+      "icon_id": "2076288",
+      "name": " 购物车",
+      "font_class": "gouwuche",
+      "unicode": "e899",
+      "unicode_decimal": 59545
+    },
+    {
+      "icon_id": "11372717",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e8bb",
+      "unicode_decimal": 59579
+    }
+  ]
+}

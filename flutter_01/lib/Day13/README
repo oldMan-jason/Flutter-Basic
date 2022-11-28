@@ -1,0 +1,8 @@
+
+AppBar、TabBar、TabBarView实现类似今日头条滑动导航功能
+
+1、AppBar中的按钮通过IconButton处理
+2、 今日头条导航滚动
+    注意设置TabBar和TabBarView 的controller，才可以展示出来
+
+3、 如果在bottomNavigationBar中的单个组件中嵌套一个TabBar，解决导航双层展示的问题

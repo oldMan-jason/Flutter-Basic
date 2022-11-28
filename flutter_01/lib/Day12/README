@@ -1,0 +1,7 @@
+1、定义BottomNavigationBar，属于Scaffold参数。
+2、点击item进行切换
+3、点击item切换不同的页面vc,通过设置scaffold的body进行切换
+4、常用的BottomNaviagationBar的属性
+5、配置 > 3 个item需要设置BottomNaviagationBar的type属性
+6、Drawer侧边栏，不同设备调试flutter程序
+7. 自定义Header和系统自带的header样式

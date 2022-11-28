@@ -1,0 +1,3 @@
+定位布局 stack 结合Positioned使用，对组件包一层Positioned组件，通过设置left、top、等属性修改相对位置
+Poistition中无法私用double.infinity
+
