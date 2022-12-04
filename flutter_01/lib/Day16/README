@@ -1,0 +1,14 @@
+PageView组件
+
+1、常规的使用 
+2、banner轮播图
+3、banner添加进度指示器 （Stack组件的使用）
+    Positioned 设置left =0 和 right = 0，则Positioned占满整个屏幕宽度
+4、 定时器实现自动轮播,
+    使用定时器和PageController
+
+5、缓存widget
+   with AutomaticKeepAliveClientMixin
+   重写
+    bool get wantKeepAlive => true;
+ 

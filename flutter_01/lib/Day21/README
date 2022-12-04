@@ -1,0 +1,9 @@
+
+
+国际化
+1、配置FLutter_localizations依赖
+    pubspec.yaml配置
+    flutter_localizations:
+    sdk: flutter
+2、导入 头文件
+3、设置国际化

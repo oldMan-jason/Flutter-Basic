@@ -1,0 +1,14 @@
+Dialog
+
+函数showDialog，返回特定的dialog组件
+1、 AlertDialog
+    通过对函数添加async，在外层获取返回值；
+
+2、simpleDialog
+3、 showModalBottomSheet
+
+4、 集成第三方库
+    pubspec.yaml 配置，执行pub get
+    
+
+

@@ -1,0 +1,21 @@
+Flutter Key
+在Flutter中，Key是不能重复使用的，所以Key一般用来做唯一标识。
+组件在更新的时候，其状态的保存主要是通过判断组件的类型或者key值是否一致。
+因此，当各组件的类型不同的时候，类型已经足够 用来区分不同的组件了，
+此时我们可以不必使用key。但是如果同时存在多个同一类型的控件的时候， 
+此时类型已经无法作为区分的条件了，我们就需要使用到key
+Key 分为 Local Key 和 GlobalKey
+局部键(LocalKey):ValueKey、ObjectKey、UniqueKey
+全局键(GlobalKey): GlobalKey、GlobalObjectKey
+
+
+通过GlobalKey获取子组件
+var boxButton = _globalKey1.currentWidget as MyBoxButton;
+
+通过GlobalKey获取子组件状态
+因为单独文件
+ var btnState = (this.key as GlobalKey).currentState as _MyBoxButtonState;
+如果同一个文件
+var btnState = _globalKey1.currentState as _MyBoxButtonState;
+
+

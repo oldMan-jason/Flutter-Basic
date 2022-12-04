@@ -1,0 +1,51 @@
+1、进度条
+2、Flutter异步编程
+    在dart语言中，没有线程和进程的概念，它是单线程+事件循环的设计模式，其中主要是通过Future来实现异步操作，
+    异步函数定义
+    /**
+   *  异步函数
+   */
+
+  _asyncMethod() {
+    return Future(() {
+      print("异步函数没有返回值");
+    });
+  }
+// 返回固定数据
+  Future<String> asyncMethod1() {
+    return Future(() {
+      return Future.value("这个是固定的返回值");
+    });
+  }
+
+  // 延迟返回数据
+  Future<String> asyncMethod2() {
+    return Future.delayed(Duration(seconds: 3), () {
+      return "延迟返回的数据";
+    });
+  }
+
+  // 自定义异步函数
+  Future<String> asyncMethod3() {
+    return Future(() {
+      int result = 0;
+      for (var i = 0; i < 10000; i++) {
+        result += i;
+      }
+      return "result = $result";
+    });
+  }
+
+  // 异步函数异常处理
+  Future errorMethod() {
+    return Future(() {
+      Future.error(Exception("这个是一个异常的抛出"));
+    });
+  }
+
+  3、异步函数改同步函数
+    1. async:在方法体前面是使用，定义该方法为一个异步方法。
+    2. await:等待并获得异步表达式的执行结果，并且给关键字只能在async修饰的方法中。
+
+4、FutureBuilder监听Future方法的状态
+5、Stream和StreamBuilder

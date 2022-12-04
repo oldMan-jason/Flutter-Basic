@@ -1,0 +1,22 @@
+插件的使用
+1、 flutter_inappwebview
+    pubspec.yaml 配置依赖
+    Android配置minSDK值  minSdkVersion 17
+    Android配置网络权限
+        android/app/src/main/AndroidManifest.xml:
+        <uses-permission android:name="android.permission.INTERNET"/>
+    ios 也需要配置ATS网络权限
+
+2、 device_info_plus 获取设备信息
+3、 connectivity_plus监听网络
+4、 url_launcher 打开第三方应用
+5、 video_player 视频播放
+6、 chewie 可有进度条的视频播放
+6、 image_picker 拍照、录制视频。相册选择、上传
+7、 shared_preferences 本地存储
+8、 barcode_scan2 条形二维码
+9. amap_flutter_localtion iOS高德定位
+
+
+
+

@@ -1,0 +1,32 @@
+Flutter 动画
+1. 隐式动画： AnimatedContainer、AnimatedPadding、AnimatedPositioned、 
+AnimatedOpacity、AnimatedDefaultTextStyle、AnimatedSwitcher都属于隐式动画。
+通过Duration配置动画时长。
+AnimatedSwitcher是在子元素改变的时候执行动画
+其他的都是在属性改变的时候执行动画
+
+2、显示动画
+常见的显式动画有RotationTransition、FadeTransition、ScaleTransition、SlideTransition、 AnimatedIcon。
+在显示动画中开发者需要创建一个AnimationController，通过AnimationController 控制动画的开始、暂停、重置、跳转、倒播等。
+    
+    需要创建AnimationController类， mixins SingleTickerProviderStateMixin；
+    _controller =
+        AnimationController(vsync: this, duration: Duration(seconds: 2));
+3、交叉动画
+    AnimationController结合Tween使用
+    position: _controller.drive(Tween(
+                  begin: const Offset(0.0, 0),
+                  end: const Offset(1.2, 1.2) //表示实际的位置向右移动自身宽度的1.2倍
+                  )
+                ..animate(_controller)
+                ..chain(CurveTween(curve: Curves.bounceIn)) //动画执行效果
+                ..chain(CurveTween(
+                    curve: Interval(0.5, 0.8)))), //当前时间点的20%开始运动，运动到总时长的80%停止
+
+4. 使用photoview实现图片浏览器
+
+
+
+
+
+

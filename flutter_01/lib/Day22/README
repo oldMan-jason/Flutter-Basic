@@ -1,0 +1,10 @@
+1、Flutter请求远程数据
+    Map转json: encode
+    json转Map: decode
+
+2、Flutter Dio请求
+
+3、刷新
+    下拉刷新：在组件外层包裹一层RefreshIndicator（）
+    上拉加载更多，需要定义ScrollController,监听listview的滚动位置，
+    最后一条数据时，底部UI增加 提示信息，

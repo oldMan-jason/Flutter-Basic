@@ -1,0 +1,28 @@
+AnimatedList
+AnimatedList 和 ListView 的功能大体相似，不同的是， AnimatedList 可以在列表中插入或删除节点 时执行一个动画，在需要添加或删除列表项的场景中会提高用户体验。
+AnimatedList 是一个 StatefulWidget，它对应的 State 类型为 AnimatedListState，添加和删除元素的 方法位于 AnimatedListState 中:
+
+指定GlobalKey，通过key获取stateWidget，
+
+删除
+//需要重新设置状态
+      setState(() {
+        globalKey.currentState!.removeItem(index, (context, animation) {
+          //注意先build然后再去删除
+          var item = _buildItem(context, index);
+          list.removeAt(index);
+          return FadeTransition(
+            opacity: animation,
+            child: item,
+          );
+        }, duration: Duration(milliseconds: 800));
+      });
+新增
+    list.add("这个是第${list.length + 1}条数据");
+    globalKey.currentState!.insertItem(list.length - 1);
+
+
+执行的动画
+    ScaleTransition
+    FadeTransition
+
